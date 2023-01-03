@@ -1,7 +1,6 @@
-
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
-@use '@angular/material' as mat;
+@use "@angular/material" as mat;
 // Plus imports for other components in your app.
 
 // Include the common styles for Angular Material. We include this here so that you only
@@ -20,13 +19,15 @@ $shopping-cart-warn: mat.define-palette(mat.$red-palette);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
-$shopping-cart-theme: mat.define-light-theme((
-  color: (
-    primary: $shopping-cart-primary,
-    accent: $shopping-cart-accent,
-    warn: $shopping-cart-warn,
+$shopping-cart-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $shopping-cart-primary,
+      accent: $shopping-cart-accent,
+      warn: $shopping-cart-warn,
+    ),
   )
-));
+);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
@@ -35,8 +36,16 @@ $shopping-cart-theme: mat.define-light-theme((
 
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+  margin-left: 11px;
+  margin-right: 11px;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 .halfWidth {
   width: 50%;
   float: left;
@@ -50,13 +59,13 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   display: flex;
 }
 
-.df>div {
+.df > div {
   // flex: 1;
 }
 
-table {
-  width: 100%;
-}
+// table {
+//   width: 100%;
+// }
 .search {
   position: fixed;
   z-index: 99999;

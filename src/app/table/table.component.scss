@@ -1,6 +1,13 @@
 table {
-    width: 75%;
+  //width: 75%;
+  flex-grow: 2;
 }
 .table-div {
-    display: flex;justify-content: space-around;
+  //display: flex;
+  //justify-content: space-around;
+  // flex-grow: 2;
+  display: flex;
+}
+.detail-summary {
+  flex-grow: 1;
 }

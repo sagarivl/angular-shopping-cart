@@ -1,30 +1,30 @@
 [
-    {
-        "item": "shirt",
-        "price": 400
-    },
-    {
-        "item": "dress",
-        "price": 100
-    },
-    {
-        "item": "pens",
-        "price": 200
-    },
-    {
-        "item": "bags",
-        "price": 300
-    },
-    {
-        "item": "shoe",
-        "price": 350
-    },
-    {
-        "item": "jenas",
-        "price": 1110
-    },
-   {
-        "item": "watch",
-         "price": 300
-   }
+  {
+    "item": "shirt",
+    "price": 400
+  },
+  {
+    "item": "dress",
+    "price": 100
+  },
+  {
+    "item": "pens",
+    "price": 200
+  },
+  {
+    "item": "bags",
+    "price": 300
+  },
+  {
+    "item": "shoe",
+    "price": 350
+  },
+  {
+    "item": "jeans",
+    "price": 1110
+  },
+  {
+    "item": "watch",
+    "price": 300
+  }
 ]

@@ -1,11 +1,4 @@
-import { outputAst } from '@angular/compiler';
-import {
-  Component,
-  EventEmitter,
-  OnInit,
-  Output,
-  ViewChild,
-} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -13,31 +6,42 @@ import {
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  amazonDataSource = [
+  shoppingCart: any = [
     {
-      id: '',
-      item: '',
-      count: 0,
-      totalprice: 0,
+      site: 'Flipkart',
+      products: [
+        {
+          id: '',
+          item: '',
+          count: 0,
+          totalprice: 0,
+        },
+      ],
+    },
+    {
+      site: 'Amazon',
+      products: [
+        {
+          id: '',
+          item: '',
+          count: 0,
+          totalprice: 0,
+        },
+      ],
+    },
+    {
+      site: 'Myntra',
+      products: [
+        {
+          id: '',
+          item: '',
+          count: 0,
+          totalprice: 0,
+        },
+      ],
     },
   ];
-  flipKartDataSource = [
-    {
-      id: '',
-      item: '',
-      count: 0,
-      totalprice: 0,
-    },
-  ];
-  
-  myntraDataSource = [
-    {
-      id: '',
-      item: '',
-      count: 0,
-      totalprice: 0,
-    },
-  ];
+
   tabName: string = 'Flipkart';
 
   constructor() {}

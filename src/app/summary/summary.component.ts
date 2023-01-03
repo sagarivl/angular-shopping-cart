@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, OnChanges } from '@angular/core';
-// import { Constants } from '../Constants';
+
 @Component({
   selector: 'app-summary',
   templateUrl: './summary.component.html',
@@ -11,8 +11,7 @@ export class SummaryComponent implements OnInit, OnChanges {
   constructor() {}
 
   ngOnInit(): void {
-    console.log(this.data,14);
-    
+    console.log(this.data, 14);
   }
 
   ngOnChanges(): void {

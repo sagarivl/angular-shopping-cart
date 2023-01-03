@@ -1,22 +1,16 @@
 <mat-card>
-  <mat-card-title>Summary</mat-card-title>
-  <mat-card-content style="display:flex ;">
+  <mat-card-title class="title-summary">Summary</mat-card-title>
+  <mat-card-content style="display: flex">
     <div class="card-content">
-      <p>Site </p>
-      <p>Total Items </p>
-      <p>Total Price </p>
-    </div>
-    <div>
-      <p>:</p>
-      <p>:</p>
-      <p>:</p>
-    </div>
-    <div>
-      <p>{{this.siteDetails?.site}}</p>
-      <p>{{this.siteDetails?this.siteDetails?.count:0}}</p>
-      <p>{{this.siteDetails?.totalPrice | currency:'USD'}}</p>
-
+      <p>Site</p>
+      <p>Total Items</p>
+      <p>Total Price</p>
     </div>
 
+    <div class="details">
+      <p>{{ this.siteDetails?.site.toUpperCase() }}</p>
+      <p>{{ this.siteDetails ? this.siteDetails?.count : 0 }}</p>
+      <p>{{ this.siteDetails?.totalPrice | currency : "USD" }}</p>
+    </div>
   </mat-card-content>
 </mat-card>
